@@ -16,7 +16,7 @@ class User
     private string $db_name = "classes";
 
     // Constructeur
-    public function __construct(string $login = "", string $password = "", string $email = "", string $firstname = "", string $lastname = "")
+    public function __construct(string $login , string $password , string $email , string $firstname , string $lastname )
     {
         $this->login = $login;
         $this->password = $password;
