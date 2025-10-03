@@ -75,11 +75,11 @@ class User
         $stmt = $conn->prepare("SELECT * FROM utilisateurs WHERE login = :login LIMIT 1 ");
         $stmt->execute([':login' => $login]);
         $user = $stmt->fetch(PDO::FETCH_ASSOC);
+    
         if (!$user) {
             return false; // utilisateur non trouvé
         }
 
-        
         // Authentification réussie → on remplit les attributs
         if ($password==$user['password']){
             $this->id = (int)$user['id'];
@@ -148,7 +148,7 @@ class User
        
 
         if ($success) {
-            $this->disconnect(); // vider les infos après suppression
+           $this->disconnect(); // vider les infos après suppression
         }
 
         return $success;

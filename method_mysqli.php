@@ -28,7 +28,7 @@ $obj->update("Ben2", "azerty",
 var_dump($obj);
 echo "<br>";
 echo "<br>";
-echo $obj->delete(); //on supprime l'user
+//echo $obj->delete(); //on supprime l'user
 echo "<br>";
 echo "<br>";
-var_dump($obj); 
+//var_dump($obj); 

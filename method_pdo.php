@@ -1,14 +1,13 @@
 <?php
 include "user-pdo.php";
-$obj=new User("Tom13", "azerty",
-"thomas@gmail.com", "Thomas", "DUPONT"); // on crée une instance d'un user
+$obj=new User("T13", "azerty",
+"tas@gmail.com", "Thoma", "DUPONT"); // on crée une instance d'un user
 var_dump($obj); 
 echo "<br>";
 echo "<br>";
-print_r($obj->register("Tom13", "azerty",
-"thomas@gmail.com", "Thomas", "azerty")); // on l'enregistre en BDD
+//print_r($obj->register("T13", "azerty","tas@gmail.com", "Thoma", "DUPONT")); // on l'enregistre en BDD
 echo "<br>";
-$obj->connect("Tom13", "azerty"); //on fait une connexion
+$obj->connect("T13", "azerty"); //on fait une connexion
 echo "<br>";
 print_r($obj->getAllinfos()); //on recupere tous ses infos
 echo "<br>";
@@ -24,9 +23,8 @@ echo "<br>";
 echo $obj->isConnected();// on verifie s'il est connecté (retourne 1 si connecté)
 echo "<br>";
 echo "<br>";
-$obj->update("Ben2", "azerty",
-"tomcruz@gmail.com", "Thomas", "DUPONT");
-var_dump($obj);
+//$obj->update("Ben2", "azerty","tomcruz@gmail.com", "Thomas", "DUPONT");
+//var_dump($obj);
 echo "<br>";
 echo "<br>";
 echo $obj->delete(); //on supprime l'user
