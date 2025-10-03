@@ -1,7 +1,6 @@
 <?php
 declare(strict_types=1);
 
-
 class User
 {
     private int $id = 58;
