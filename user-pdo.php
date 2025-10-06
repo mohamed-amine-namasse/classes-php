@@ -24,7 +24,7 @@ class User
         $this->lastname = $lastname;
     }
 
-    // Méthode privée pour obtenir une connexion MySQLi
+    // Méthode privée pour obtenir une connexion PDO
     private function getConnection(): PDO
     {
          try {
