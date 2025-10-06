@@ -82,7 +82,7 @@ class User
 
         // Authentification réussie → on remplit les attributs
         if ($password==$user['password']){
-            $this->id = (int)$user['id'];
+            $this->id = $user['id'];
             $this->login = $user['login'];
             $this->email = $user['email'];
             $this->firstname = $user['firstname'];
